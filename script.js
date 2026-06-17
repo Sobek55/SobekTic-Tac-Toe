@@ -89,4 +89,4 @@ function restartGame() {
         cell.style.color = "";
     });
 }
-```
+
