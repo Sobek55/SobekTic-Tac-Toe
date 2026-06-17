@@ -36,6 +36,12 @@ function handleCellClick() {
     board[index] = currentPlayer;
     this.textContent = currentPlayer;
 
+    if (currentPlayer === "X") {
+        this.style.color = "#ff6b6b";
+    } else {
+        this.style.color = "#4ecdc4";
+    }
+
     checkWinner();
 }
 
@@ -80,6 +86,7 @@ function restartGame() {
 
     cells.forEach(cell => {
         cell.textContent = "";
+        cell.style.color = "";
     });
 }
 ```
